@@ -68,17 +68,17 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="mb-6 md:mb-0">
             <h4 className="text-lg font-bold mb-4">Contact Information</h4>
-            <p className="text-blue-200">
+            {/* <p className="text-blue-200">
               <span className="font-semibold">Address:</span> 123 Battery St,
               Cape Town, South Africa
-            </p>
+            </p> */}
             <p className="text-blue-200">
               <span className="font-semibold">Phone:</span>{' '}
               <a
                 href="tel:+27821234567"
                 className="text-white hover:underline"
               >
-                +27 00 000 0000
+                +27 67 221 3523
               </a>
             </p>
             <p className="text-blue-200">
@@ -97,29 +97,29 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/batterypower"
+                href="https://www.facebook.com/profile.php?id=61572467019350"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-200 hover:text-white"
               >
                 <FaFacebook className="h-6 w-6" />
               </a>
-              <a
+              {/* <a
                 href="https://www.twitter.com/batterypower"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-200 hover:text-white"
               >
                 <FaTwitter className="h-6 w-6" />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="https://www.instagram.com/batterypower"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-200 hover:text-white"
               >
                 <FaInstagram className="h-6 w-6" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ const Footer = () => {
         {/* Bottom Section: Copyright */}
         <div className="border-t border-blue-500 pt-4 text-center">
           <p>&copy; {new Date().getFullYear()} DialABattery. All rights reserved.</p>
-          <p>Designed by Ninja Tech Design, Cape Town, South Africa.</p>
+          <p>Designed by Ninja Tech Design Team, Cape Town, South Africa.</p>
         </div>
       </div>
     </footer>

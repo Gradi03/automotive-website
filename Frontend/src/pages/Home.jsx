@@ -1,5 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const Home = () => {
   return (
@@ -50,10 +52,21 @@ const Home = () => {
             </p>
             <div className="space-y-4 md:space-y-0 md:space-x-4">
               <button className="bg-blue-600 text-white px-6 py-3 rounded-md shadow-lg hover:bg-blue-700 transition">
-                Get a Quote
+                 <ScrollLink
+                          to="contact"
+                          smooth={true}
+                          duration={500}
+                          className="cursor-pointer"
+                        >Get a Quote</ScrollLink>
+                
               </button>
               <button className="bg-gray-200 text-blue-600 px-6 py-3 rounded-md shadow-lg hover:bg-gray-300 transition">
-                Learn More
+              <ScrollLink
+                          to="about"
+                          smooth={true}
+                          duration={500}
+                          className="cursor-pointer"
+                        >Learn More</ScrollLink>
               </button>
             </div>
           </div>
