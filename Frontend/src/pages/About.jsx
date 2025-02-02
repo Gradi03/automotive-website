@@ -34,6 +34,9 @@ const About = () => {
         />
         <meta name="twitter:image" content="/images/car battery.webp" />
         <meta name="twitter:card" content="summary_large_image" />
+        
+        {/* Preload Hero Image */}
+        <link rel="preload" as="image" href="/images/car battery.webp" type="image/webp" />
       </Helmet>
 
       <section className="bg-[#f5f5f5] py-16">
@@ -47,7 +50,7 @@ const About = () => {
               Powered by Trust, <span className="text-blue-600">Driven by Excellence</span>
             </h3>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
-            DialABattery is your trusted partner for reliable automotive battery solutions in South Africa. We’re committed to delivering top-quality products and services, ensuring every drive is powered with confidence.
+              DialABattery is your trusted partner for reliable automotive battery solutions in South Africa. We’re committed to delivering top-quality products and services, ensuring every drive is powered with confidence.
             </p>
             <ul className="space-y-6">
               <li className="flex items-start">
@@ -136,11 +139,12 @@ const About = () => {
             <img
               src="/images/car battery.webp"
               alt="Car Battery"
-              className="w-full h-auto rounded-lg shadow-lg"
+              width="800" // Set explicit width
+              height="450" // Set explicit height
+              className="w-full h-auto rounded-lg shadow-lg object-cover"
               loading="lazy"
-              
             />
-            {/* If necessary, display "Trusted by Thousands" in the corner as a button */}
+            {/* Display "Trusted by Thousands" in the corner */}
             <div className="absolute top-4 left-4 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md text-sm hidden lg:block">
               Trusted by Thousands
             </div>

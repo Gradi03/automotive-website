@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const FAQ = () => {
   // State to track which question is open
@@ -44,72 +45,101 @@ const FAQ = () => {
   ];
 
   return (
-    <div id='FAQ' className="container mx-auto px-4 py-10">
-      <div className="text-center mb-10">
-        <h2 className="text-4xl font-bold text-gray-800">
-          Got Questions? <span className="text-blue-500">We’ve Got Answers!</span>
-        </h2>
-        <p className="text-lg text-gray-600 mt-2">
-          Find answers to some of the most frequently asked questions.
-        </p>
-      </div>
+    <>
+      <Helmet>
+        <title>FAQ - DialABattery Cape Town | Automotive Battery Services</title>
+        <meta
+          name="description"
+          content="Have questions about automotive batteries? Find answers to frequently asked questions on battery replacement, emergency services, and more from DialABattery Cape Town."
+        />
+        <meta
+          name="keywords"
+          content="FAQ, automotive batteries, car battery replacement, roadside assistance, battery recycling, BBBEE compliant"
+        />
+        <meta property="og:title" content="FAQ - DialABattery Cape Town" />
+        <meta
+          property="og:description"
+          content="Explore frequently asked questions on car batteries and related services from DialABattery. We offer 24/7 emergency assistance, recycling, and more."
+        />
+        <meta name="twitter:title" content="FAQ - DialABattery Cape Town" />
+        <meta
+          name="twitter:description"
+          content="Get answers to all your questions about automotive batteries, roadside assistance, and more from DialABattery Cape Town."
+        />
+      </Helmet>
 
-      <div className="space-y-4 max-w-3xl mx-auto">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="border border-gray-300 rounded-lg shadow-sm"
-          >
-            <button
-              className="w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 focus:outline-none"
-              onClick={() => toggleFAQ(index)}
+      <div id='FAQ' className="container mx-auto px-4 py-10">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-bold text-gray-800">
+            Got Questions? <span className="text-blue-500">We’ve Got Answers!</span>
+          </h2>
+          <p className="text-lg text-gray-600 mt-2">
+            Find answers to some of the most frequently asked questions.
+          </p>
+        </div>
+
+        <div className="space-y-4 max-w-3xl mx-auto">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border border-gray-300 rounded-lg shadow-sm"
             >
-              <h3 className="text-lg font-semibold text-gray-800">
-                {faq.question}
-              </h3>
-              <span className="text-blue-500">
-                {openIndex === index ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M20 12H4"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 4v16m8-8H4"
-                    />
-                  </svg>
-                )}
-              </span>
-            </button>
-            {openIndex === index && (
-              <div className="p-4 bg-white text-gray-700 border-t border-gray-300">
-                {faq.answer}
-              </div>
-            )}
-          </div>
-        ))}
+              <button
+                className="w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 focus:outline-none"
+                onClick={() => toggleFAQ(index)}
+                aria-expanded={openIndex === index ? 'true' : 'false'}
+                aria-controls={`faq-answer-${index}`}
+              >
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {faq.question}
+                </h3>
+                <span className="text-blue-500">
+                  {openIndex === index ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M20 12H4"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  )}
+                </span>
+              </button>
+              {openIndex === index && (
+                <div
+                  id={`faq-answer-${index}`}
+                  className="p-4 bg-white text-gray-700 border-t border-gray-300"
+                >
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

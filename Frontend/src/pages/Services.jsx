@@ -54,7 +54,7 @@ const Services = () => {
             {/* Service 1 */}
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
               <div className="mb-6 text-blue-600">
-                <FaBatteryFull className="text-5xl" />
+                <FaBatteryFull className="text-5xl" aria-label="Battery Testing Icon" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 text-center mb-4">
                 Battery Testing
@@ -67,7 +67,7 @@ const Services = () => {
             {/* Service 2 */}
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
               <div className="mb-6 text-blue-600">
-                <FaTools className="text-5xl" />
+                <FaTools className="text-5xl" aria-label="Battery Installation Icon" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 text-center mb-4">
                 Battery Installation
@@ -80,7 +80,7 @@ const Services = () => {
             {/* Service 3 */}
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
               <div className="mb-6 text-blue-600">
-                <FaCarCrash className="text-5xl" />
+                <FaCarCrash className="text-5xl" aria-label="Emergency Assistance Icon" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 text-center mb-4">
                 Emergency Assistance
@@ -93,7 +93,7 @@ const Services = () => {
             {/* Service 4 */}
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
               <div className="mb-6 text-blue-600">
-                <FaRecycle className="text-5xl" />
+                <FaRecycle className="text-5xl" aria-label="Battery Recycling Icon" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 text-center mb-4">
                 Battery Recycling
@@ -103,6 +103,8 @@ const Services = () => {
               </p>
             </div>
           </div>
+          
+          
         </div>
       </section>
     </>
