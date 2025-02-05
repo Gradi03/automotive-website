@@ -1,12 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink } from "react-scroll";
 
 const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Home - DialABattery | Your Trusted Automotive Battery Provider</title>
+        {/* <title>Home - DialABattery | Your Trusted Automotive Battery Provider</title> */}
         <meta
           name="description"
           content="DialABattery offers reliable, affordable, and long-lasting car batteries. From everyday commutes to heavy-duty demands, we power your journey."
@@ -35,23 +35,20 @@ const Home = () => {
         />
         <meta name="twitter:image" content="/images/car engine.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        
+
         {/* Preload Hero Image for Faster Load */}
         <link rel="preload" as="image" href="/images/car engine.webp" type="image/webp" />
-        
-        {/* Preload Critical Font (Example) */}
-        {/* <link rel="preload" href="/path/to/font.woff2" as="font" type="font/woff2" crossorigin="anonymous" /> */}
       </Helmet>
 
-      <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 px-6 md:px-12">
+      <header id="home" className="bg-white py-16">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 px-6 md:px-12">
           {/* Left Column - Content */}
           <div className="flex-1 text-center md:text-left space-y-6">
             <h1 className="text-4xl font-extrabold text-blue-600 leading-tight">
               Power Your Drive <span className="text-yellow-500">Every Day</span>
             </h1>
             <p className="text-lg text-gray-700">
-              Reliable. Affordable. Built to last. BatteryPower delivers the
+              Reliable. Affordable. Built to last. Dial a Battery delivers the
               ultimate performance for every type of vehicle. Don't let your
               journey be stopped by a weak battery. Choose the battery trusted by thousands.
             </p>
@@ -70,20 +67,20 @@ const Home = () => {
           </div>
 
           {/* Right Column - Image */}
-          <div className="flex-1 relative">
+          <div className="flex-1 relative mt-6 lg:mt-0">
             <img
               srcSet="/images/car engine.webp 800w, /images/car engine-large.webp 1200w"
               sizes="(max-width: 600px) 800px, 1200px"
               src="/images/car engine.webp"
               alt="Car Engine Hero"
-              width="800" // Set explicit width
-              height="450" // Set explicit height
+              width="800"
+              height="450"
               className="w-full h-auto rounded-lg shadow-lg object-cover"
               loading="lazy"
             />
           </div>
         </div>
-      </section>
+      </header>
     </>
   );
 };

@@ -14,7 +14,7 @@ const ContactUs = () => {
     });
 
     const formData = new FormData(event.target);
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "1c07edf0-175a-4964-9532-043712d971c6");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -50,7 +50,7 @@ const ContactUs = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - DialABattery Cape Town | Automotive Battery Services</title>
+        {/* <title>Contact Us - DialABattery Cape Town | Automotive Battery Services</title> */}
         <meta
           name="description"
           content="Get in touch with DialABattery in Cape Town. We provide automotive battery installation, testing, and emergency assistance. Contact us for reliable services."
@@ -77,7 +77,7 @@ const ContactUs = () => {
         />
       </Helmet>
 
-      <div id="contact" className="container mx-auto px-4 py-10">
+      <main id="contact" className="container mx-auto px-4 py-10">
         <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             <span className="text-blue-500">Contact Us</span> - DialABattery Cape Town
@@ -169,7 +169,7 @@ const ContactUs = () => {
             Submit
           </button>
         </form>
-      </div>
+      </main>
     </>
   );
 };

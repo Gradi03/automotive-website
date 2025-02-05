@@ -6,7 +6,7 @@ const WhyUsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Why Us - DialABattery | Trusted Power Solutions</title>
+        {/* <title>Why Us - DialABattery | Trusted Power Solutions</title> */}
         <meta name="description" content="DialABattery is your trusted partner for high-quality automotive batteries, offering expert advice, affordable prices, and eco-friendly practices." />
         <meta name="keywords" content="trusted power solutions, automotive batteries, expert team, eco-friendly practices, affordable pricing, BBBEE compliance" />
         <meta property="og:title" content="Why Us - DialABattery | Trusted Power Solutions" />

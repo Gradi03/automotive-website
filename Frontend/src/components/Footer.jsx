@@ -19,7 +19,7 @@ const Footer = () => {
     <footer className="bg-blue-600 text-white py-10 relative">
       <div className="container mx-auto px-4">
         {/* Top Section: Links and Information */}
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-start mb-6">
           {/* Navigation Links */}
           <div className="mb-6 md:mb-0">
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
@@ -34,10 +34,10 @@ const Footer = () => {
                 <ScrollLink to="services" smooth={true} duration={500} className="text-blue-200 hover:text-white transition cursor-pointer">Services</ScrollLink>
               </li>
               <li>
-                <ScrollLink to="contact" smooth={true} duration={500} className="text-blue-200 hover:text-white transition cursor-pointer">Contact Us</ScrollLink>
+                <ScrollLink to="FAQ" smooth={true} duration={500} className="text-blue-200 hover:text-white transition cursor-pointer">FAQ</ScrollLink>
               </li>
               <li>
-                <ScrollLink to="FAQ" smooth={true} duration={500} className="text-blue-200 hover:text-white transition cursor-pointer">FAQ</ScrollLink>
+                <ScrollLink to="contact" smooth={true} duration={500} className="text-blue-200 hover:text-white transition cursor-pointer">Contact Us</ScrollLink>
               </li>
             </ul>
           </div>

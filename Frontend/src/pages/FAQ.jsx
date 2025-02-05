@@ -47,7 +47,7 @@ const FAQ = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ - DialABattery Cape Town | Automotive Battery Services</title>
+        {/* <title>FAQ - DialABattery Cape Town | Automotive Battery Services</title> */}
         <meta
           name="description"
           content="Have questions about automotive batteries? Find answers to frequently asked questions on battery replacement, emergency services, and more from DialABattery Cape Town."

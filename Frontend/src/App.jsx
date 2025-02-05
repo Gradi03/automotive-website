@@ -19,17 +19,17 @@ function App() {
       <Navbar />
       
       {/* Scrollable sections */}
-      <Element name="home">
+      <Element name="Home">
         <Home />
       </Element>
-      <Element name="about">
+      <Element name="About">
         <About />
       </Element>
-      <Element name="services">
+      <Element name="Services">
         <Services />
       </Element>
 
-      <Element name="whyUsPage">
+      <Element name="WhyUsPage">
         <WhyUsPage />
       </Element>
       

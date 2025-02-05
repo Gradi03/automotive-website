@@ -5,10 +5,10 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - DialABattery | Automotive Battery Solutions</title>
+        {/* <title>About Us - DialABattery | Reliable Automotive Battery Solutions in Cape Town</title> */}
         <meta
           name="description"
-          content="DialABattery provides top-quality automotive battery solutions, including testing, installation, and emergency assistance in South Africa. BBBEE compliant."
+          content="DialABattery offers reliable automotive battery solutions in Cape Town. We specialize in battery testing, installation, emergency roadside assistance, and eco-friendly recycling services. BBBEE compliant and trusted by thousands."
         />
         <meta
           name="keywords"
@@ -34,15 +34,14 @@ const About = () => {
         />
         <meta name="twitter:image" content="/images/car battery.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        
         {/* Preload Hero Image */}
         <link rel="preload" as="image" href="/images/car battery.webp" type="image/webp" />
       </Helmet>
 
-      <section className="bg-[#f5f5f5] py-16">
-        <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 px-6 md:px-12">
+      <main className="bg-[#f5f5f5] py-16">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 px-6 md:px-12">
           {/* Left Column - Content */}
-          <div className="flex-1">
+          <div id="about" className="flex-1">
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               About <span className="text-blue-600">Us</span>
             </h2>
@@ -138,9 +137,9 @@ const About = () => {
           <div className="flex-1 relative">
             <img
               src="/images/car battery.webp"
-              alt="Car Battery"
-              width="800" // Set explicit width
-              height="450" // Set explicit height
+              alt="Reliable car battery solutions in Cape Town"
+              width="800"
+              height="450"
               className="w-full h-auto rounded-lg shadow-lg object-cover"
               loading="lazy"
             />
@@ -150,7 +149,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </main>
     </>
   );
 };

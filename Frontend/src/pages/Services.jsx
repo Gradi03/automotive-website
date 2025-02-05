@@ -6,14 +6,14 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Services - DialABattery | Automotive Battery Solutions</title>
+        {/* <title>Services - DialABattery | Automotive Battery Solutions in Cape Town</title> */}
         <meta
           name="description"
-          content="DialABattery offers a full range of automotive battery services including testing, installation, emergency assistance, and battery recycling."
+          content="DialABattery offers a full range of automotive battery services in Cape Town, including testing, installation, emergency assistance, and battery recycling. Reliable and professional."
         />
         <meta
           name="keywords"
-          content="battery testing, battery installation, roadside assistance, battery recycling, car battery services, automotive power"
+          content="battery testing, battery installation, roadside assistance, battery recycling, car battery services Cape Town, automotive power South Africa"
         />
         <meta
           property="og:title"
@@ -23,11 +23,8 @@ const Services = () => {
           property="og:description"
           content="Get the best battery testing, installation, and roadside assistance from BatteryPower, ensuring your vehicle always stays powered."
         />
-        <meta property="og:image" content="/images/car-engine.webp" />
-        <meta
-          property="og:url"
-          content="https://www.DialABattery.co.za/services"
-        />
+        <meta property="og:image" content="https://www.dialabattery.co.za/images/car-engine.webp" />
+        <meta property="og:url" content="https://www.dialabattery.co.za/services" />
         <meta
           name="twitter:title"
           content="Services - DialABattery | Automotive Battery Solutions"
@@ -36,12 +33,12 @@ const Services = () => {
           name="twitter:description"
           content="DialABattery offers top-notch battery services, from testing and installation to emergency roadside assistance and recycling."
         />
-        <meta name="twitter:image" content="/images/car-engine.webp" />
+        <meta name="twitter:image" content="https://www.dialabattery.co.za/images/car-engine.webp" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      <section className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <main className="bg-gray-50 py-16">
+        <div id="services" className="max-w-7xl mx-auto px-6 md:px-12">
           <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-8">
             Our <span className="text-blue-600">Services</span>
           </h2>
@@ -106,7 +103,7 @@ const Services = () => {
           
           
         </div>
-      </section>
+      </main>
     </>
   );
 };
